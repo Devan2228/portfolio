@@ -5,14 +5,18 @@
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");
 
-menuToggle.addEventListener("click", () => {
+if (menuToggle && navMenu) {
 
-    navMenu.classList.toggle("active");
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
 
-});
+}
 
 
-// Close mobile menu after clicking a link
+// ==============================
+// CLOSE MOBILE MENU
+// ==============================
 
 const navLinks = document.querySelectorAll("#nav-menu a");
 
@@ -20,7 +24,9 @@ navLinks.forEach(link => {
 
     link.addEventListener("click", () => {
 
-        navMenu.classList.remove("active");
+        if (navMenu) {
+            navMenu.classList.remove("active");
+        }
 
     });
 
@@ -28,7 +34,7 @@ navLinks.forEach(link => {
 
 
 // ==============================
-// CURRENT YEAR
+// PORTFOLIO LOADED
 // ==============================
 
 console.log("Mahadevan S Portfolio Loaded");
