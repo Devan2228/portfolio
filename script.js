@@ -7,26 +7,21 @@ const navMenu = document.getElementById("nav-menu");
 
 if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
+        const isOpen = navMenu.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 }
 
-
 // Close mobile menu after clicking a link
-
 const navLinks = document.querySelectorAll("#nav-menu a");
 
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
         if (navMenu) {
             navMenu.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
         }
     });
 });
-
-
-// ==============================
-// PORTFOLIO LOADED
-// ==============================
 
 console.log("Mahadevan S Portfolio Loaded");
