@@ -97,6 +97,11 @@ nav a:hover {
     color: var(--ink);
 }
 
+/* Résumé link inside the mobile menu (hidden on desktop) */
+.nav-resume-mobile {
+    display: none;
+}
+
 .nav-resume {
     padding: 9px 18px;
     border: 1px solid var(--ink);
@@ -370,6 +375,13 @@ nav a:hover {
     max-width: 62ch;
 }
 
+/* The label inside About keeps the accent colour */
+.about-content p.section-label {
+    color: var(--accent);
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
 .education-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -429,21 +441,22 @@ nav a:hover {
     background: var(--bg);
 }
 
-.skill-tag {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--accent);
-    margin-bottom: 16px;
-}
-
 .skill-card h3 {
     font-size: 16px;
     margin-bottom: 8px;
 }
 
-.skill-card p {
+/* FIX: :not(.skill-tag) stops this rule from overriding the green tag colour */
+.skill-card p:not(.skill-tag) {
     color: var(--muted);
     font-size: 13px;
+}
+
+.skill-card .skill-tag {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 16px;
 }
 
 
@@ -699,6 +712,11 @@ footer {
 
     .nav-resume {
         display: none;
+    }
+
+    /* Show the résumé link inside the dropdown menu instead */
+    .nav-resume-mobile {
+        display: block;
     }
 
     .hero h1 {
