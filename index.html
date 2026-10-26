@@ -1,375 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Mahadevan S - Junior Data Scientist portfolio featuring projects in Data Science, Machine Learning, Data Analytics and Power BI.">
-    <meta name="author" content="Mahadevan S">
-    <title>Mahadevan S | Junior Data Scientist</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mahadevan S – Junior Data Scientist. Projects in machine learning, analytics and Power BI.">
+<title>Mahadevan S | Junior Data Scientist</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="navbar">
-        <div class="nav-container">
+<header>
+  <div class="wrap bar">
+    <a href="#home" class="brand">Mahadevan S</a>
+    <button id="toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Mahadevan_S_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    </nav>
+  </div>
+</header>
 
-            <a href="#home" class="logo">Mahadevan S</a>
+<main>
 
-            <nav id="nav-menu">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </nav>
+<section id="home" class="hero">
+  <div class="wrap">
+    <p class="hi">Hello, I’m</p>
+    <h1>Mahadevan S</h1>
+    <p class="role">Junior Data Scientist</p>
+    <p class="lead">Junior Data Scientist skilled in Python, SQL and machine learning, building and evaluating models and turning data into clear insights with Power BI. Open to entry-level roles in Data Science and Data Analytics.</p>
+    <div class="btns">
+      <a href="#projects" class="btn primary">View projects</a>
+      <a href="assets/Mahadevan_S_Resume.pdf" download class="btn">Download résumé</a>
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/mahadevans1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:mahadevan2134@gmail.com">Email</a>
+    </div>
+  </div>
+</section>
 
-            <a href="assets/Mahadevan_S_Resume.pdf" target="_blank" class="nav-resume">Resume</a>
+<section id="about">
+  <div class="wrap">
+    <h2><span>01.</span> About</h2>
+    <div class="about-grid">
+      <div>
+        <p>I’m a Junior Data Scientist with hands-on experience in Python, SQL, data preprocessing, exploratory data analysis, statistics and machine learning, gained through internship training and projects.</p>
+        <p>I build and evaluate classification and regression models with Scikit-learn, using feature engineering, cross-validation and hyperparameter tuning. I’m also familiar with deep learning in PyTorch and with visualization in Power BI and Excel.</p>
+      </div>
+      <div class="card">
+        <p class="label">Education</p>
+        <h3>B.E. Electronics and Communication Engineering</h3>
+        <p>St. Joseph College of Engineering, Chennai</p>
+        <p>2022 – 2026 · CGPA 8.4 / 10</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+<section id="skills">
+  <div class="wrap">
+    <h2><span>02.</span> Skills</h2>
+    <div class="skill-group"><h3>Programming</h3>
+      <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span></div></div>
+    <div class="skill-group"><h3>Python libraries</h3>
+      <div class="chips"><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Scikit-learn</span><span class="chip">Joblib</span></div></div>
+    <div class="skill-group"><h3>Machine learning</h3>
+      <div class="chips"><span class="chip">Classification</span><span class="chip">Regression</span><span class="chip">Feature engineering</span><span class="chip">Model evaluation</span><span class="chip">Cross-validation</span><span class="chip">Hyperparameter tuning</span></div></div>
+    <div class="skill-group"><h3>Deep learning</h3>
+      <div class="chips"><span class="chip">PyTorch</span><span class="chip">Neural networks</span><span class="chip">Tensors</span><span class="chip">Training loops</span><span class="chip">Backpropagation</span></div></div>
+    <div class="skill-group"><h3>Data science &amp; statistics</h3>
+      <div class="chips"><span class="chip">Data cleaning</span><span class="chip">EDA</span><span class="chip">Data validation</span><span class="chip">Hypothesis testing</span><span class="chip">Correlation</span><span class="chip">A/B testing</span></div></div>
+    <div class="skill-group"><h3>Visualization &amp; BI</h3>
+      <div class="chips"><span class="chip">Power BI</span><span class="chip">Power Query</span><span class="chip">DAX</span><span class="chip">Excel</span><span class="chip">KPI reporting</span></div></div>
+    <div class="skill-group"><h3>Cloud fundamentals</h3>
+      <div class="chips"><span class="chip">AWS EC2</span><span class="chip">S3</span><span class="chip">RDS</span><span class="chip">VPC</span><span class="chip">IAM</span><span class="chip">CloudWatch</span></div></div>
+    <div class="skill-group"><h3>Tools</h3>
+      <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">MySQL</span><span class="chip">Jupyter Notebook</span><span class="chip">VS Code</span></div></div>
+  </div>
+</section>
 
-        </div>
-    </header>
+<section id="projects">
+  <div class="wrap">
+    <h2><span>03.</span> Projects</h2>
+    <div class="grid">
 
+      <article class="project">
+        <h3>AI-Powered Customer Churn Prediction &amp; Analytics</h3>
+        <span class="metric">74.3% accuracy · 0.794 ROC-AUC</span>
+        <ul><li>Cleaned a dataset of 2,000 records and 32 features, including missing-value handling.</li><li>Ran EDA on churn patterns across tenure, contract type, monthly charges and behaviour.</li><li>Built a Logistic Regression model, evaluated with accuracy, precision, recall, F1 and ROC-AUC.</li><li>Turned model results into customer retention insights.</li></ul>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Power BI</span></div>
+        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+      </article>
 
-    <main>
+      <article class="project">
+        <h3>Sales Revenue Forecasting</h3>
+        <span class="metric">24,118 records · 12 features</span>
+        <ul><li>Removed 30 duplicate records and handled 72 missing Marketing Spend values.</li><li>Created time-based, lag and rolling-window features to capture sales patterns.</li><li>Prepared revenue, units, pricing, discount, promotion, holiday and marketing features.</li><li>Saved the model and preprocessing with Joblib for reproducible predictions.</li></ul>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Time series</span><span>Joblib</span></div>
+        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+      </article>
 
-        <!-- ================= HERO ================= -->
-        <section id="home" class="hero">
-            <div class="hero-container">
+      <article class="project">
+        <h3>Customer Behavior Dashboard</h3>
+        <p>An interactive Power BI dashboard showing customer behaviour patterns and key business metrics through linked visuals.</p>
+        <div class="tags"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Excel</span></div>
+        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+      </article>
 
-                <div class="hero-content">
+      <article class="project">
+        <h3>IPL Analysis Dashboard, 2008–2025</h3>
+        <p>A Power BI dashboard covering nearly two decades of IPL data: team performance, player stats, match outcomes and tournament insights.</p>
+        <div class="tags"><span>Power BI</span><span>Power Query</span><span>DAX</span></div>
+        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+      </article>
 
-                    <p class="hero-eyebrow">Junior Data Scientist — Chennai</p>
+      <article class="project">
+        <h3>Thermal Behavior Analysis System</h3>
+        <p>A data-driven system for analysing thermal behaviour and spotting patterns in temperature-related data.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div>
+        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+      </article>
 
-                    <h1>Mahadevan S</h1>
+    </div>
+  </div>
+</section>
 
-                    <p class="hero-description">
-                        I turn raw data into decisions. My work spans forecasting,
-                        churn modelling and dashboarding — built with Python, SQL
-                        and Power BI, and grounded in the numbers, not the noise.
-                    </p>
+<section id="experience">
+  <div class="wrap">
+    <h2><span>04.</span> Experience</h2>
+    <div class="job">
+      <p class="date">Jan 2026 – Jun 2026</p>
+      <h3>Data Science Intern</h3>
+      <p class="org">Besant Technologies, Chennai</p>
+      <ul>
+        <li>Cleaned, preprocessed and validated structured datasets using Python, Pandas and SQL.</li>
+        <li>Analysed data to find trends, patterns, anomalies and relationships between variables.</li>
+        <li>Built and evaluated classification and regression models with Scikit-learn, using feature engineering, cross-validation and hyperparameter tuning.</li>
+        <li>Created visualizations, dashboards and reports in Python, Power BI and Excel.</li>
+      </ul>
+    </div>
+    <p class="cert"><strong>Data Science Certification</strong>, Besant Technologies, Jan 2026 – Jun 2026. Python, SQL, statistics, machine learning, data visualization, Power BI and Excel.</p>
+  </div>
+</section>
 
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View projects</a>
-                        <a href="assets/Mahadevan_S_Resume.pdf" download class="btn btn-secondary">Download résumé</a>
-                    </div>
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2><span>05.</span> Let’s connect</h2>
+    <p>I’m looking for entry-level opportunities in Data Science, Data Analytics and related roles. Feel free to reach out.</p>
+    <div class="btns">
+      <a href="mailto:mahadevan2134@gmail.com" class="btn primary">Email me</a>
+      <a href="https://www.linkedin.com/in/mahadevans1/" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+      <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+    </div>
+  </div>
+</section>
 
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mahadevans1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href="mailto:mahadevan2134@gmail.com">Email</a>
-                    </div>
+</main>
 
-                </div>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mahadevan S</span>
+    <span>Junior Data Scientist</span>
+  </div>
+</footer>
 
-                <div class="hero-visual">
-                    <div class="data-card">
-                        <div class="data-card-header">
-                            <span>profile.json</span>
-                        </div>
-                        <dl class="data-rows">
-                            <div class="data-row">
-                                <dt>role</dt>
-                                <dd>Junior Data Scientist</dd>
-                            </div>
-                            <div class="data-row">
-                                <dt>stack</dt>
-                                <dd>Python · SQL · Power BI</dd>
-                            </div>
-                            <div class="data-row">
-                                <dt>focus</dt>
-                                <dd>Forecasting, churn, dashboards</dd>
-                            </div>
-                            <div class="data-row">
-                                <dt>education</dt>
-                                <dd>B.E. ECE, 2022–2026</dd>
-                            </div>
-                            <div class="data-row">
-                                <dt>status</dt>
-                                <dd class="status-open">open to opportunities</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-        <section id="about" class="section">
-            <div class="container about-grid">
-
-                <div class="about-content">
-                    <p class="section-label">About</p>
-                    <h2>Turning data into insights</h2>
-
-                    <p>
-                        I'm a recent B.E. graduate in Electronics and Communication
-                        Engineering with a strong foundation in data analytics,
-                        machine learning and data visualization.
-                    </p>
-                    <p>
-                        I enjoy working with data to discover patterns, generate
-                        insights and build practical data-driven solutions using
-                        Python, SQL, machine learning and visualization tools.
-                    </p>
-                    <p>
-                        I've worked on projects involving sales forecasting,
-                        customer churn prediction, customer behavior analysis and
-                        data visualization — and I'm currently looking for
-                        entry-level roles in Data Science or Data Analytics.
-                    </p>
-                </div>
-
-                <div class="education-card">
-                    <p class="card-label">Education</p>
-                    <h3>B.E. Electronics and Communication Engineering</h3>
-                    <p class="institution">St. Joseph College of Engineering, Chennai</p>
-                    <p class="education-period">2022 – 2026</p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-        <section id="skills" class="section skills-section">
-            <div class="container">
-
-                <p class="section-label">Skills</p>
-                <h2>Technologies &amp; tools</h2>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <p class="skill-tag">py / sql</p>
-                        <h3>Programming</h3>
-                        <p>Python, SQL</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <p class="skill-tag">pandas</p>
-                        <h3>Data analysis</h3>
-                        <p>Pandas, NumPy, Excel</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <p class="skill-tag">sklearn</p>
-                        <h3>Machine learning</h3>
-                        <p>Regression, classification, feature engineering, model evaluation</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <p class="skill-tag">viz</p>
-                        <h3>Visualization</h3>
-                        <p>Power BI, Matplotlib, Seaborn</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <p class="skill-tag">etl</p>
-                        <h3>Data processing</h3>
-                        <p>Data cleaning, EDA, ETL, data modeling</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <p class="skill-tag">dax</p>
-                        <h3>Power BI</h3>
-                        <p>Power Query, DAX, dashboard development</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <p class="skill-tag">mysql</p>
-                        <h3>Database</h3>
-                        <p>MySQL, MySQL Workbench</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <p class="skill-tag">git</p>
-                        <h3>Tools</h3>
-                        <p>Git, GitHub, VS Code</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-        <section id="projects" class="section">
-            <div class="container">
-
-                <p class="section-label">Projects</p>
-                <h2>Featured work</h2>
-                <p class="section-subtitle">
-                    Practical projects applying data analysis, machine learning
-                    and visualization techniques to real-world questions.
-                </p>
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <h3>Sales &amp; Revenue Forecasting</h3>
-                            <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="github-icon">GitHub</a>
-                        </div>
-                        <p>
-                            A machine-learning forecasting pipeline built on historical
-                            sales data — data cleaning, lag and rolling-average feature
-                            engineering, model training, evaluation and revenue prediction.
-                        </p>
-                        <div class="project-tools">
-                            <span>Python</span><span>Pandas</span><span>NumPy</span>
-                            <span>Scikit-learn</span><span>Matplotlib</span><span>Joblib</span>
-                        </div>
-                        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="project-link">View project</a>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <h3>Customer Churn Prediction &amp; Analytics</h3>
-                            <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="github-icon">GitHub</a>
-                        </div>
-                        <p>
-                            A logistic regression model predicting customer churn and
-                            surfacing the factors behind attrition, with churn
-                            predictions and revenue-at-risk insights.
-                        </p>
-                        <div class="project-tools">
-                            <span>Python</span><span>Pandas</span><span>NumPy</span>
-                            <span>Scikit-learn</span><span>Power BI</span>
-                        </div>
-                        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="project-link">View project</a>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <h3>Customer Behavior Analysis Dashboard</h3>
-                            <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="github-icon">GitHub</a>
-                        </div>
-                        <p>
-                            An interactive Power BI dashboard analyzing customer
-                            behavior, surfacing patterns and key business metrics
-                            through linked visualizations.
-                        </p>
-                        <div class="project-tools">
-                            <span>Power BI</span><span>Power Query</span><span>DAX</span><span>Excel</span>
-                        </div>
-                        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="project-link">View project</a>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <h3>IPL Analysis Dashboard, 2008–2025</h3>
-                            <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="github-icon">GitHub</a>
-                        </div>
-                        <p>
-                            An interactive Power BI dashboard covering nearly two
-                            decades of IPL data — team performance, player statistics,
-                            match outcomes and tournament-level insights.
-                        </p>
-                        <div class="project-tools">
-                            <span>Power BI</span><span>Power Query</span><span>DAX</span>
-                        </div>
-                        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="project-link">View project</a>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <h3>Intelligent Thermal Behavior Analysis System</h3>
-                            <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="github-icon">GitHub</a>
-                        </div>
-                        <p>
-                            A data-driven system for analyzing thermal behavior and
-                            identifying patterns in temperature-related data.
-                        </p>
-                        <div class="project-tools">
-                            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
-                        </div>
-                        <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="project-link">View project</a>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ================= EXPERIENCE ================= -->
-        <section id="experience" class="section experience-section">
-            <div class="container">
-
-                <p class="section-label">Experience</p>
-                <h2>Training &amp; experience</h2>
-
-                <div class="experience-card">
-                    <div class="experience-left">
-                        <p class="experience-date">Jan 2026 – May 2026</p>
-                        <h3>Data Analyst Intern</h3>
-                        <h4>Besant Technologies</h4>
-                        <p>Chennai</p>
-                    </div>
-
-                    <div class="experience-right">
-                        <p>
-                            Gained practical experience in data analytics, including
-                            Python, SQL, Excel, Power BI, data cleaning, data
-                            visualization and dashboard development.
-                        </p>
-                        <div class="project-tools">
-                            <span>Python</span><span>SQL</span><span>Excel</span>
-                            <span>Power BI</span><span>Data Analysis</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ================= CONTACT ================= -->
-        <section id="contact" class="section contact-section">
-            <div class="container contact-container">
-
-                <p class="section-label">Contact</p>
-                <h2>Let's connect</h2>
-                <p class="contact-description">
-                    I'm currently looking for entry-level opportunities in Data
-                    Science, Data Analytics and related roles.
-                </p>
-
-                <div class="contact-buttons">
-                    <a href="mailto:mahadevan2134@gmail.com" class="btn btn-primary">Email me</a>
-                    <a href="https://www.linkedin.com/in/mahadevans1/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn</a>
-                    <a href="https://github.com/Devan2228" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
-                    <a href="assets/Mahadevan_S_Resume.pdf" download class="btn btn-secondary">Download résumé</a>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer>
-        <div class="footer-container">
-            <p>© 2026 Mahadevan S</p>
-            <p>Junior Data Scientist</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
